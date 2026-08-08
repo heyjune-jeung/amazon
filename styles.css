@@ -569,12 +569,17 @@ body:has(.detail:target) #view-home { display: none; }
   text-transform: uppercase;
   margin: 0 0 10px;
 }
-.demo video {
-  display: block;
-  width: 100%;
-  height: auto;
+.demo__frame {
+  aspect-ratio: 16 / 10;
   border-radius: 8px;
+  overflow: hidden;
   background: #000;
+}
+.demo__frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 .demo__caption {
   font-size: 12px;
